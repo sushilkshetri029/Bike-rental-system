@@ -1,0 +1,149 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id               String        @id @default(auto()) @map("_id") @db.ObjectId
+  userName         String?       @unique
+  name             String
+  email            String        @unique
+  number           String?       @unique
+  location         String?
+  password         String?
+  dateJoined       DateTime      @default(now())
+  isUser           Boolean       @default(true)
+  isOwner          Boolean       @default(false)
+  isAdmin          Boolean       @default(false)
+  isFreelancer     Boolean       @default(false)
+  isNumberVerified Boolean       @default(false)
+  isEmailVerified  Boolean       @default(false)
+  avatar           String?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  otps             Otp[]
+  orders           Order[]
+  Activities       Activity[]
+  Applications     Application[]
+  CallRequests     CallRequest[]
+}
+
+model Service {
+  id            String        @id @default(auto()) @map("_id") @db.ObjectId
+  title         String        @unique
+  description   String
+  subcategories Subcategory[]
+  icon          String
+  imageAddress  String
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model Subcategory {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  title        String   @unique
+  description  String
+  imageAddress String
+  service      Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  serviceId    String   @db.ObjectId
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Otp {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  otp       String
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  userId    String   @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ForgotPasswordOtp {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  otp       String
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  orderService     String
+  orderDate        String
+  orderTime        String
+  orderDescription String
+  orderAddress     String
+  orderContact     String
+  status           String   @default("Pending")
+  isPaid           Boolean  @default(false)
+  cancelledBy      String?
+  dateCreated      DateTime @default(now())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+  userId           String   @db.ObjectId
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Application {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  fullName      String
+  email         String   @unique
+  phone         String   @unique
+  address       String
+  currentStatus String
+  appliedFor    String
+  experience    String
+  file          File[]
+  isHired       Boolean  @default(false)
+  status        String   @default("Pending")
+  user          User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+  userId        String   @db.ObjectId
+  dateApplied   DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model File {
+  id            String      @id @default(auto()) @map("_id") @db.ObjectId
+  name          String
+  contentType   String
+  data          String
+  Application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  applicationId String      @db.ObjectId
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Activity {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  activity  String
+  about     String
+  from      String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Restrict)
+  userId    String   @db.ObjectId
+  isRead    Boolean  @default(false)
+  dateDone  DateTime @default(now())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CallRequest {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  phone     String   @unique
+  contacted Boolean  @default(false)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Restrict)
+  userId    String?  @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
