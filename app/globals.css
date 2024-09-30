@@ -17,6 +17,20 @@ h6 {
   font-family: var(--font-montserrat), sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: red; */
+}
+
+main {
+  /* Main will be full availabe height */
+  /* flex-grow: 1; */
+  margin-bottom: auto;
+  /* background-color: blue; */
+}
+
 :root {
   --color-primary: #1E90FF;
   --color-secondary: #FF6347;
