@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         className={`${openSans.variable} ${montserrat.variable} ${openSansItalic.variable} ${montserratItalic.variable}`}
       >
         <Navbar />
-        <NextTopLoader color="#EE7214" showSpinner={false} zIndex={1800} />
+        <NextTopLoader color="var(--theme-blue-dark)" showSpinner={false} zIndex={1800} />
         {children}
         <Footer />
       </body>
