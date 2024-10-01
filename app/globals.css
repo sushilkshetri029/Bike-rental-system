@@ -31,9 +31,23 @@ main {
   /* background-color: blue; */
 }
 
+/* link-rd = link-remove-decoration */
+.link-rd {
+  text-decoration: none;
+  color: var(--color-black-text);
+}
+
+.image-fit {
+  object-fit: cover;
+  object-position: center;
+}
+
 :root {
-  --color-primary: #1E90FF;
-  --color-secondary: #FF6347;
-  --color-background: #F8F9FA;
-  --color-text: #343A40;
+  --theme-blue-primary: #1E90FF;
+  --theme-blue-dark: #0D47A1;
+  --theme-blue-dark-2: darkslateblue;
+  --theme-blue-dark-3: darkblue;
+  --theme-yellow-primary-2: #FF6347;
+  --color-black-text: #343A40;
+  --color-purple-text: #8167a9;
 }
