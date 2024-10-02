@@ -13,7 +13,7 @@ const HomepageClient = () => {
                         <span className="highlight-yellow">Looking </span>to rent a <span className="highlight-yellow">motorbike </span> in Pokhara
                     </h1>
                     <p className="hero-subtitle">
-                        We have the best motorbikes in town. Choose from a wide range of bikes, including sport bikes, cruisers, and dirt bikes. Whether you're seeking speed, comfort, or adventure, we have the perfect bike for you.
+                        We have the best motorbikes in town. Choose from a wide range of bikes, including sport bikes, cruisers, and dirt bikes. Whether you&apos;re seeking speed, comfort, or adventure, we have the perfect bike for you.
                     </p>
                     <div className="hero-link-group">
                         <Link href='services' className="hero-link btn btn-blue link-rd flex-center">
