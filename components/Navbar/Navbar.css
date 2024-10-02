@@ -4,8 +4,8 @@ nav.navbar-wrapper {
     gap: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    border-bottom: 2px solid gray;
+    padding: 15px 50px; /* Responsive: Make 15px later */
+    /* border-bottom: 2px solid gray; */
 }
 
 .nav-left .logo {

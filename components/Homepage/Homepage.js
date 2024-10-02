@@ -1,9 +1,10 @@
 import './Homepage.css';
+import HomepageClient from './_components/HomepageClient/HomepageClient';
 
 const Homepage = () => {
   return (
-    <main>
-      Homepage
+    <main className='home'>
+      <HomepageClient />
     </main>
   )
 }
