@@ -1,0 +1,15 @@
+.hero-form {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}

@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { MdAttachMoney, MdOutlineMiscellaneousServices } from "react-icons/md";
 import { FaImages, FaShoppingCart } from "react-icons/fa";
-import './HomepageClient.css';
 import Image from 'next/image'
+import './HomepageClient.css';
+import HeroForm from '../HeroForm/HeroForm';
 
 const HomepageClient = () => {
     return (
@@ -50,6 +51,7 @@ const HomepageClient = () => {
                         </Link>
                     </div>
                 </div>
+                <HeroForm />
             </section>
         </>
     )
