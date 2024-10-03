@@ -4,6 +4,8 @@
 }
 
 .input-field input {
+    /* background-color: wheat; */
+    background-color: #f6f6f6;
     font-size: 1rem;
     position: relative;
     padding: 10px 7.5px;
@@ -61,6 +63,7 @@
 
 /* active state */
 .input-field input:focus~label,
+.input-field.fixed-label label,
 .input-field input.valid~label {
     /* top: -20px; */
     bottom: unset;
