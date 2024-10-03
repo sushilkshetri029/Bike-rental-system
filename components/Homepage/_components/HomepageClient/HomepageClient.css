@@ -1,5 +1,6 @@
 section.hero {
     display: flex;
+    position: relative;
     flex-direction: row;
     max-width: 1485px;
     min-height: 450px;
