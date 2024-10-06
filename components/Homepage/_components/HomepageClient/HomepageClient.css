@@ -1,3 +1,11 @@
+.home-section {
+    padding: 50px;
+}
+
+.home-title {
+    margin-bottom: 50px;
+}
+
 section.hero {
     display: flex;
     position: relative;
@@ -77,24 +85,41 @@ section.hero {
     /* background-color: blue; */
 }
 
-/* .hero .right .book-now-btn {
-    position: absolute;
-    bottom: 70px;
-    right: 0px;
+section.why-vehicle-rs {
+    /* background-color: #f9f9f9; */
+    /* text-align: center; */
+    margin-top: 100px;
+}
+
+.why-items {
     display: flex;
-    width: fit-content;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: auto;
-    gap: 10px;
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 7px 0px 0px 7px;
+    gap: 40px;
 }
 
-.hero .right .book-now-btn .icon {
-    font-size: 1.3rem;
+.why-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
 }
 
-.hero .right .book-now-btn .text {
-    font-size: 1.1rem;
-    font-weight: 500;
-} */
+.why-icon {
+    font-size: 3rem;
+    color: var(--theme-blue-dark-2);
+    margin-bottom: 15px;
+}
+
+.why-item-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.why-item-description {
+    font-size: 1rem;
+    color: #666;
+}

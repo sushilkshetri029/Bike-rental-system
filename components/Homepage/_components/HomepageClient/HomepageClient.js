@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { MdAttachMoney, MdOutlineMiscellaneousServices } from "react-icons/md";
-import { FaImages, FaShoppingCart } from "react-icons/fa";
+import { MdAttachMoney, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp } from "react-icons/md";
+import { FaImages, FaRegClock, FaShoppingCart, FaThumbsUp } from "react-icons/fa";
+import { HiClock } from "react-icons/hi";
 import Image from 'next/image'
 import './HomepageClient.css';
 import HeroForm from '../HeroForm/HeroForm';
@@ -8,7 +9,7 @@ import HeroForm from '../HeroForm/HeroForm';
 const HomepageClient = () => {
     return (
         <>
-            <section className="hero">
+            <section className="hero home-section">
                 <div className="left hero-item">
                     <h1 className="hero-title">
                         <span className="highlight-yellow">Looking </span>to rent a <span className="highlight-yellow">motorbike </span> in Pokhara
@@ -39,21 +40,40 @@ const HomepageClient = () => {
                 </div>
                 <div className="right hero-item">
                     <Image className='hero-image image-fit' width={500} height={300} src='/png/motorbike-vector-3.png' alt='Motorbike' />
-                    {/* <Link href='/ride' className="book-now-btn link-rd btn btn-blue-light">
-                            <div className="icon flex-center">
-                                <FaShoppingCart />
-                            </div>
-                            <div className="text">
-                                Book now
-                            </div>
-                        </Link> */}
-                    {/* <div className="background-items-wrapper"> */}
-                    {/* </div> */}
                 </div>
-            </section>
-            <section className="call-to-action">
                 <HeroForm />
             </section>
+            <section className="why-vehicle-rs home-section">
+                <h1 className="why-title title home-title">Why Vehicle-RS?</h1>
+                <div className="why-items">
+                    <div className="why-item">
+                        <MdAttachMoney className="why-icon" />
+                        <h3 className="why-item-title">Affordable Prices</h3>
+                        <p className="why-item-description">We offer the best prices in town for renting motorbikes.</p>
+                    </div>
+                    <div className="why-item">
+                        <MdOutlineMiscellaneousServices className="why-icon" />
+                        <h3 className="why-item-title">Top-notch Services</h3>
+                        <p className="why-item-description">Our services are designed to provide you with the best experience.</p>
+                    </div>
+                    <div className="why-item">
+                        <MdSecurity className="why-icon" />
+                        <h3 className="why-item-title">Safety First</h3>
+                        <p className="why-item-description">Your safety is our priority. We ensure all our bikes are well-maintained.</p>
+                    </div>
+                    <div className="why-item">
+                        <MdThumbUp className="why-icon" />
+                        <h3 className="why-item-title">Customer Satisfaction</h3>
+                        <p className="why-item-description">We strive to provide the best customer service.</p>
+                    </div>
+                    <div className="why-item">
+                        <HiClock className="why-icon" />
+                        <h3 className="why-item-title">24/7 Availability</h3>
+                        <p className="why-item-description">We are available round the clock to serve you.</p>
+                    </div>
+                </div>
+            </section>
+            hello
         </>
     )
 }
