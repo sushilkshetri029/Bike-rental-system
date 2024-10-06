@@ -11,13 +11,13 @@
   --theme-blue-dark-3: darkblue;
   --theme-yellow-primary: #FF6347;
   --theme-blue-background-light: rgb(217, 229, 233);
-  --color-black-text: #343A40;
+  --color-black-text: #333;
   --color-purple-text: #8167a9;
 }
 
 body {
   font-family: var(--font-open-sans), sans-serif;
-  /* color: var(--color-black-text); */
+  color: var(--color-black-text);
 }
 
 h1,
