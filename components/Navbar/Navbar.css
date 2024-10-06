@@ -6,6 +6,7 @@ nav.navbar-wrapper {
     align-items: center;
     padding: 15px 50px; /* Responsive: Make 15px later */
     /* border-bottom: 2px solid gray; */
+    background-color: var(--theme-blue-background-light)
 }
 
 .nav-left .logo {
