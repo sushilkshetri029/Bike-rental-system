@@ -38,19 +38,20 @@ const HomepageClient = () => {
                     </div>
                 </div>
                 <div className="right hero-item">
-                    <div className="background"></div>
-                    <div className="background-items-wrapper">
-                        <Image className='hero-image image-fit' width={500} height={300} src='/png/motorbike-vector-4.png' alt='Motorbike' />
-                        <Link href='/ride' className="right-info-item link-rd btn btn-blue-light">
+                    <Image className='hero-image image-fit' width={500} height={300} src='/png/motorbike-vector-3.png' alt='Motorbike' />
+                    {/* <Link href='/ride' className="book-now-btn link-rd btn btn-blue-light">
                             <div className="icon flex-center">
                                 <FaShoppingCart />
                             </div>
                             <div className="text">
                                 Book now
                             </div>
-                        </Link>
-                    </div>
+                        </Link> */}
+                    {/* <div className="background-items-wrapper"> */}
+                    {/* </div> */}
                 </div>
+            </section>
+            <section className="call-to-action">
                 <HeroForm />
             </section>
         </>

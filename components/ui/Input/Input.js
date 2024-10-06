@@ -10,17 +10,19 @@ const Input = ({ className = '', type = 'text', label = 'Enter', name = 'input-d
 
     return (
         <div className={`input-field ${className} ${togglePassword && !disabled ? 'password' : ''} ${fixedLabel ? 'fixed-label' : ''}`}>
-            <input className={`input ${value !== '' ? `valid` : ''}`} disabled={disabled} value={value} type={passwordType === true ? 'password' : passwordType === false && type === 'password' ? 'text' : type} name={name} required={required} onChange={(e) => onChange(e)} />
-            {togglePassword && !disabled &&
-                <>
-                    {
-                        passwordType ?
-                            <FiEye className='eye-icon' onClick={() => setPasswordType(false)} />
-                            :
-                            <FiEyeOff className='eye-icon' onClick={() => setPasswordType(true)} />
-                    }
-                </>
-            }
+            {/* <div className="input-wrapper"> */}
+                <input className={`input ${value !== '' ? `valid` : ''}`} disabled={disabled} value={value} type={passwordType === true ? 'password' : passwordType === false && type === 'password' ? 'text' : type} name={name} required={required} onChange={(e) => onChange(e)} />
+                {togglePassword && !disabled &&
+                    <>
+                        {
+                            passwordType ?
+                                <FiEye className='eye-icon' onClick={() => setPasswordType(false)} />
+                                :
+                                <FiEyeOff className='eye-icon' onClick={() => setPasswordType(true)} />
+                        }
+                    </>
+                }
+            {/* </div> */}
             <span className="highlight"></span>
             <span className="bar"></span>
             <label>{label}</label>

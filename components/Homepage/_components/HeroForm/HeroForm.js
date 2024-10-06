@@ -6,6 +6,7 @@ import Input from '@/components/ui/Input/Input';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 
 const HeroForm = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [contact, setContact] = useState('');
   const [pickupDate, setPickupDate] = useState('');
@@ -21,6 +22,9 @@ const HeroForm = () => {
         break;
       case 'pickupDate':
         setPickupDate(value);
+        break;
+      case 'name':
+        setName(value);
         break;
       // case 'registerPassword':
       //     setRegisterPassword(value);
@@ -38,11 +42,17 @@ const HeroForm = () => {
     <form action="" className="hero-form">
       <div className="hero-form-title">
         <h3 className="text">
-        <FaRegCalendarAlt className='hero-title-icon' /> Request a Ride
+          <FaRegCalendarAlt className='hero-title-icon' /> Request a Ride
         </h3>
         <div className="line"></div>
       </div>
       <div className="form-inputs">
+      <Input
+          label='Name'
+          required
+          value={name}
+          onChange={(e) => handleInputChange(e, 'name')}
+        />
         <Input
           label='Email'
           required
@@ -64,7 +74,7 @@ const HeroForm = () => {
           type='date'
           onChange={(e) => handleInputChange(e, 'pickupDate')}
         />
-        <button type='submit' className='btn btn-blue'>submit</button>
+        <button type='submit' className='btn btn-blue'>Submit</button>
       </div>
     </form>
   )
