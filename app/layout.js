@@ -52,3 +52,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export const metadata = {
+  title: "Vehicle-RS",
+  description: "Rent a motorbike in Pokhara",
+};

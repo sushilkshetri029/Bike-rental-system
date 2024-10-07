@@ -6,12 +6,15 @@
 
 :root {
   --theme-blue-primary: #1E90FF;
+  --theme-blue-primary-2: #5264AE;
   --theme-blue-dark: #0D47A1;
   --theme-blue-dark-2: darkslateblue;
   --theme-blue-dark-3: darkblue;
   --theme-yellow-primary: #FF6347;
+  --theme-yellow-light: #FFA07A;
   --theme-blue-background-light: rgb(217, 229, 233);
   --color-black-text: #333;
+  --color-black-light: #666;
   --color-purple-text: #8167a9;
 }
 
