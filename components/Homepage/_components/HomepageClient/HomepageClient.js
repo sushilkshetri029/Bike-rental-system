@@ -1,6 +1,9 @@
 import Link from 'next/link';
-import { MdAttachMoney, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp } from "react-icons/md";
-import { FaImages, FaRegClock, FaShoppingCart, FaThumbsUp } from "react-icons/fa";
+import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp, MdTour } from "react-icons/md";
+import { FaClipboardCheck, FaImages, FaMotorcycle, FaRegClock, FaSearch, FaShoppingCart, FaSmile, FaThumbsUp } from "react-icons/fa";
+import { RiMotorbikeFill } from "react-icons/ri";
+import { BsPeopleFill } from "react-icons/bs";
+import { PiPersonSimpleBikeBold } from "react-icons/pi";
 import { HiClock } from "react-icons/hi";
 import Image from 'next/image'
 import './HomepageClient.css';
@@ -72,8 +75,63 @@ const HomepageClient = () => {
                         <p className="why-item-description">We are available round the clock to serve you.</p>
                     </div>
                 </div>
+                <div className="overview-items">
+                    <div className="overview-item font-montserrat">
+                        <RiMotorbikeFill className="icon" />
+                        <div className="count">
+                            100<span className="highlight-yellow">+</span>
+                        </div>
+                        <div className="description">
+                            <div className="text">Bikes Available</div>
+                        </div>
+                    </div>
+                    <div className="line line-vertical"></div>
+                    <div className="overview-item font-montserrat">
+                        <MdTour className="icon" />
+                        <div className="count">
+                            500<span className="highlight-yellow">+</span>
+                        </div>
+                        <div className="description">
+                            <div className="text">Tours</div>
+                        </div>
+                    </div>
+                    <div className="line line-vertical"></div>
+                    <div className="overview-item font-montserrat">
+                        <BsPeopleFill className="icon" />
+                        <div className="count">
+                            700<span className="highlight-yellow">+</span>
+                        </div>
+                        <div className="description">
+                            <div className="text">Happy Customers</div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            hello
+            <section className="how-it-works-section">
+                <h1 className="how-it-works-title title home-title">How It Works</h1>
+                <div className="how-it-works-steps">
+                    <div className="how-it-works-step">
+                        <FaSearch className='icon' />
+                        <h3 className="how-it-works-step-title"><span className="highlight-yellow">1.</span> Find Your Bike</h3>
+                        <p className="how-it-works-step-description">Browse through our wide range of motorbikes and choose the one that suits your needs.</p>
+                    </div>
+                    <div className="how-it-works-step">
+                        <MdBookmarkAdded className='icon' />
+                        <h3 className="how-it-works-step-title"><span className="highlight-yellow">2.</span> Book Online</h3>
+                        <p className="how-it-works-step-description">Reserve your chosen bike online with our easy-to-use booking system.</p>
+                    </div>
+                    <div className="how-it-works-step">
+                        <FaMotorcycle className='icon' />
+                        <h3 className="how-it-works-step-title"><span className="highlight-yellow">3.</span> Pick Up</h3>
+                        <p className="how-it-works-step-description">Visit our location to pick up your bike and complete the rental process.</p>
+                    </div>
+                    <div className="how-it-works-step">
+                        <PiPersonSimpleBikeBold className='icon' />
+                        <h3 className="how-it-works-step-title"><span className="highlight-yellow">4.</span> Enjoy Your Ride</h3>
+                        <p className="how-it-works-step-description">Hit the road and enjoy your ride with our top-quality motorbikes.</p>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

@@ -1,9 +1,13 @@
+main.home {
+    --section-item-gap: 60px;
+}
+
 .home-section {
     padding: 50px;
 }
 
 .home-title {
-    margin-bottom: 50px;
+    margin-bottom: var(--section-item-gap);
 }
 
 section.hero {
@@ -88,7 +92,7 @@ section.hero {
 section.why-vehicle-rs {
     /* background-color: #f9f9f9; */
     /* text-align: center; */
-    margin-top: 100px;
+    margin-top: 125px;
 }
 
 .why-items {
@@ -121,5 +125,86 @@ section.why-vehicle-rs {
 
 .why-item-description {
     font-size: 1rem;
-    color: #666;
+    font-weight: 500;
+    color: var(--color-black-light);
+}
+
+.overview-items {
+    margin-top: calc(var(--section-item-gap) * 1.75);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.overview-items .overview-item {
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overview-items .overview-item .icon {
+    font-size: 3rem;
+    color: var(--theme-blue-dark-2);
+}
+
+.overview-items .overview-item .count {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.overview-items .overview-item .description {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--colot-black-light);
+}
+
+.how-it-works-section {
+    margin-top: calc(var(--section-item-gap) * 0.5);
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.how-it-works-steps {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.how-it-works-step {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.how-it-works-step .icon {
+    font-size: 3rem;
+    color: var(--theme-blue-dark-2);
+    margin-bottom: 15px;
+}
+
+.how-it-works-step img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.how-it-works-step-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.how-it-works-step-description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-black-light);
 }
