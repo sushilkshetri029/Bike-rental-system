@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp, MdTour } from "react-icons/md";
-import { FaClipboardCheck, FaImages, FaMotorcycle, FaRegClock, FaSearch, FaShoppingCart, FaSmile, FaThumbsUp } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaArrowCircleRight, FaArrowRight, FaClipboardCheck, FaImages, FaMotorcycle, FaRegClock, FaSearch, FaShoppingCart, FaSmile, FaThumbsUp } from "react-icons/fa";
 import { RiMotorbikeFill } from "react-icons/ri";
 import { BsPeopleFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { PiPersonSimpleBikeBold } from "react-icons/pi";
 import { HiClock } from "react-icons/hi";
+import { TiArrowRightThick } from "react-icons/ti";
 import Image from 'next/image'
 import './HomepageClient.css';
 import HeroForm from '../HeroForm/HeroForm';
@@ -48,7 +49,7 @@ const HomepageClient = () => {
                 <HeroForm />
             </section>
             <section className="why-vehicle-rs home-section">
-                <h1 className="why-title title home-title">Why Vehicle-RS?</h1>
+                <h1 className="why-title title home-title">Why Vehicle-RS ?</h1>
                 <div className="why-items">
                     <div className="why-item">
                         <MdAttachMoney className="why-icon" />
@@ -109,26 +110,26 @@ const HomepageClient = () => {
                 </div>
             </section>
             <section className="how-it-works-section">
-                <h1 className="how-it-works-title title home-title">How It Works</h1>
+                <h1 className="how-it-works-title title home-title">How It Works ?</h1>
                 <div className="how-it-works-steps">
                     <div className="how-it-works-step">
                         <FaSearch className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">1.</span> Find Your Bike</h3>
                         <p className="how-it-works-step-description">Browse through our wide range of motorbikes and choose the one that suits your needs.</p>
                     </div>
-                    <IoIosArrowForward className='step-icon' />
+                    <TiArrowRightThick className='step-icon' />
                     <div className="how-it-works-step">
                         <MdBookmarkAdded className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">2.</span> Book Online</h3>
                         <p className="how-it-works-step-description">Reserve your chosen bike online with our easy-to-use booking system.</p>
                     </div>
-                    <IoIosArrowForward className='step-icon' />
+                    <TiArrowRightThick className='step-icon' />
                     <div className="how-it-works-step">
                         <FaMotorcycle className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">3.</span> Pick Up</h3>
                         <p className="how-it-works-step-description">Visit our location to pick up your bike and complete the rental process.</p>
                     </div>
-                    <IoIosArrowForward className='step-icon' />
+                    <TiArrowRightThick className='step-icon' />
                     <div className="how-it-works-step">
                         <PiPersonSimpleBikeBold className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">4.</span> Enjoy Your Ride</h3>
