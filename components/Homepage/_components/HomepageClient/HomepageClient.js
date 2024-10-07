@@ -3,6 +3,7 @@ import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecur
 import { FaClipboardCheck, FaImages, FaMotorcycle, FaRegClock, FaSearch, FaShoppingCart, FaSmile, FaThumbsUp } from "react-icons/fa";
 import { RiMotorbikeFill } from "react-icons/ri";
 import { BsPeopleFill } from "react-icons/bs";
+import { IoIosArrowForward } from "react-icons/io";
 import { PiPersonSimpleBikeBold } from "react-icons/pi";
 import { HiClock } from "react-icons/hi";
 import Image from 'next/image'
@@ -77,7 +78,7 @@ const HomepageClient = () => {
                 </div>
                 <div className="overview-items">
                     <div className="overview-item font-montserrat">
-                        <RiMotorbikeFill className="icon" />
+                        {/* <RiMotorbikeFill className="icon" /> */}
                         <div className="count">
                             100<span className="highlight-yellow">+</span>
                         </div>
@@ -87,7 +88,7 @@ const HomepageClient = () => {
                     </div>
                     <div className="line line-vertical"></div>
                     <div className="overview-item font-montserrat">
-                        <MdTour className="icon" />
+                        {/* <MdTour className="icon" /> */}
                         <div className="count">
                             500<span className="highlight-yellow">+</span>
                         </div>
@@ -97,7 +98,7 @@ const HomepageClient = () => {
                     </div>
                     <div className="line line-vertical"></div>
                     <div className="overview-item font-montserrat">
-                        <BsPeopleFill className="icon" />
+                        {/* <BsPeopleFill className="icon" /> */}
                         <div className="count">
                             700<span className="highlight-yellow">+</span>
                         </div>
@@ -115,16 +116,19 @@ const HomepageClient = () => {
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">1.</span> Find Your Bike</h3>
                         <p className="how-it-works-step-description">Browse through our wide range of motorbikes and choose the one that suits your needs.</p>
                     </div>
+                    <IoIosArrowForward className='step-icon' />
                     <div className="how-it-works-step">
                         <MdBookmarkAdded className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">2.</span> Book Online</h3>
                         <p className="how-it-works-step-description">Reserve your chosen bike online with our easy-to-use booking system.</p>
                     </div>
+                    <IoIosArrowForward className='step-icon' />
                     <div className="how-it-works-step">
                         <FaMotorcycle className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">3.</span> Pick Up</h3>
                         <p className="how-it-works-step-description">Visit our location to pick up your bike and complete the rental process.</p>
                     </div>
+                    <IoIosArrowForward className='step-icon' />
                     <div className="how-it-works-step">
                         <PiPersonSimpleBikeBold className='icon' />
                         <h3 className="how-it-works-step-title"><span className="highlight-yellow">4.</span> Enjoy Your Ride</h3>

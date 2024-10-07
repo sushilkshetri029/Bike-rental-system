@@ -98,7 +98,7 @@ section.why-vehicle-rs {
 .why-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 40px;
 }
 
@@ -142,7 +142,9 @@ section.why-vehicle-rs {
     width: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* Fix Later: make it 10px if icon is added */
+    /* gap: 10px; */
+    gap: 15px;
 }
 
 .overview-items .overview-item .icon {
@@ -172,7 +174,13 @@ section.why-vehicle-rs {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
+}
+
+.how-it-works-section .step-icon {
+    font-size: 2rem;
+    color: var(--theme-blue-dark-2);
+    margin: auto 0px;
 }
 
 .how-it-works-step {
