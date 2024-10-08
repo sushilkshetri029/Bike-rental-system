@@ -109,16 +109,14 @@
   background-color: var(--theme-blue-dark-2);
   border-radius: 20px;
 }
-.line.yellow {
+
+.line.line-yellow {
   background-color: var(--theme-yellow-primary);
 }
-.line.yellow {
-  background-color: var(--theme-yellow-primary);
-}
+
 .line.line-vertical {
   width: 3px;
   height: unset;
   align-self: stretch;
-  background-color: var(--theme-blue-dark-2);
   border-radius: 20px;
 }

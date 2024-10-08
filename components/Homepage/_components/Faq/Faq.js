@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaQuestion } from 'react-icons/fa';
 import './Faq.css';
 
 const Faq = () => {
@@ -58,7 +58,13 @@ const Faq = () => {
           ref={el => faqRefs.current[index] = el}
         >
           <div className="faq-question-wrapper">
-            <h3 className="faq-question">{faq.question}</h3>
+            <h3 className="faq-question">
+              <FaQuestion className='question-icon' />
+              {/* <div className="line line-vertical line-yellow"></div> */}
+              {
+                faq.question
+              }
+            </h3>
             {/* {openIndex === index ? <FaChevronUp className="faq-icon" /> : <FaChevronDown className="faq-icon" />} */}
             <FaChevronDown className="faq-icon" />
           </div>
