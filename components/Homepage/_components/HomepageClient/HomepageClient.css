@@ -215,3 +215,8 @@ section.how-it-works-section {
     font-weight: 500;
     color: var(--color-black-light);
 }
+
+section.faq-section {
+    margin-top: calc(var(--section-item-gap) * 0.5);
+    max-width: 1000px;
+}
