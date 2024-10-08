@@ -27,6 +27,7 @@
     border-radius: 10px;
     background-color: var(--theme-blue-background-light);
     border: 1px solid #ccc;
+    transition: 0.25s ease;
 }
 
 .faq-item.open .faq-question-wrapper {
@@ -34,9 +35,18 @@
 }
 
 .faq-question {
+    display: flex;
+    align-items: center;
     font-size: 1.05rem;
+    gap: 10px;
     font-weight: bold;
     color: var(--theme-blue-dark-2);
+}
+
+.faq-question .question-icon {
+    /* font-size: 1rem; */
+    /* color: var(--theme-blue-dark-2); */
+    color: var(--theme-yellow-primary);
 }
 
 .faq-icon {
