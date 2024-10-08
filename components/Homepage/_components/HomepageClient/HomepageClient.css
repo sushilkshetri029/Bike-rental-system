@@ -4,6 +4,8 @@ main.home {
 
 .home-section {
     padding: 50px;
+    max-width: 1600px;
+    margin: 0px auto;
 }
 
 .home-title {
@@ -16,9 +18,7 @@ section.hero {
     flex-direction: row;
     width: 100%;
     min-height: 450px;
-    max-width: 1600px;
     padding: 50px 50px 175px 50px;
-    margin: 0px auto;
     gap: 50px;
     background-color: var(--theme-blue-background-light)
     /* background-color: red; */
@@ -163,9 +163,8 @@ section.why-vehicle-rs {
     color: var(--colot-black-light);
 }
 
-.how-it-works-section {
+section.how-it-works-section {
     margin-top: calc(var(--section-item-gap) * 0.5);
-    padding: 50px;
     background-color: #f7f7f7;
     text-align: center;
 }
