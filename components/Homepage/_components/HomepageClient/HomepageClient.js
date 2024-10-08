@@ -1,15 +1,13 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp, MdTour } from "react-icons/md";
-import { FaArrowAltCircleRight, FaArrowCircleRight, FaArrowRight, FaClipboardCheck, FaImages, FaMotorcycle, FaRegClock, FaSearch, FaShoppingCart, FaSmile, FaThumbsUp } from "react-icons/fa";
-import { RiMotorbikeFill } from "react-icons/ri";
-import { BsPeopleFill } from "react-icons/bs";
-import { IoIosArrowForward } from "react-icons/io";
-import { PiPersonSimpleBikeBold } from "react-icons/pi";
+import { FaImages, FaMotorcycle, FaSearch } from "react-icons/fa";
 import { HiClock } from "react-icons/hi";
+import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp } from "react-icons/md";
+import { PiPersonSimpleBikeBold } from "react-icons/pi";
 import { TiArrowRightThick } from "react-icons/ti";
-import Image from 'next/image'
-import './HomepageClient.css';
 import HeroForm from '../HeroForm/HeroForm';
+import './HomepageClient.css';
+import Faq from '../Faq/Faq';
 
 const HomepageClient = () => {
     return (
@@ -109,7 +107,7 @@ const HomepageClient = () => {
                     </div>
                 </div>
             </section>
-            <section className="how-it-works-section">
+            <section className="how-it-works-section home-section">
                 <h1 className="how-it-works-title title home-title">How It Works ?</h1>
                 <div className="how-it-works-steps">
                     <div className="how-it-works-step">
@@ -136,6 +134,10 @@ const HomepageClient = () => {
                         <p className="how-it-works-step-description">Hit the road and enjoy your ride with our top-quality motorbikes.</p>
                     </div>
                 </div>
+            </section>
+            <section className="faq-section home-section">
+                <h2 className="faq-title title home-title">Frequently Asked Questions</h2>
+                <Faq />
             </section>
         </>
     )
