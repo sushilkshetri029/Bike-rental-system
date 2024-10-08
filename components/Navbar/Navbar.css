@@ -1,12 +1,20 @@
 nav.navbar-wrapper {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     gap: 70px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     padding: 15px 50px; /* Responsive: Make 15px later */
     /* border-bottom: 2px solid gray; */
-    background-color: var(--theme-blue-background-light)
+    background-color: var(--theme-blue-background-light);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-left .logo {
@@ -30,6 +38,7 @@ nav.navbar-wrapper {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
 }
 
 .nav-middle .nav-middle-item {
@@ -62,6 +71,11 @@ nav.navbar-wrapper {
 .nav-middle .nav-middle-item:hover,
 .nav-middle .nav-middle-item.active {
     color: var(--theme-blue-dark-2);
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-right .nav-right-item.sign-in-link {
