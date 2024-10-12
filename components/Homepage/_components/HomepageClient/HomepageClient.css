@@ -126,7 +126,7 @@ section.why-vehicle-rs {
 .why-item-description {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-black-light);
+    color: var(--color-black-gray);
 }
 
 .overview-items {
@@ -213,10 +213,15 @@ section.how-it-works-section {
 .how-it-works-step-description {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-black-light);
+    color: var(--color-black-gray);
 }
 
 section.faq-section {
     margin-top: calc(var(--section-item-gap) * 0.5);
-    max-width: 1000px;
+    background-color: #f7f7f7;
+    /* max-width: 1000px; */
+}
+
+section.bikes-section {
+    margin-top: calc(var(--section-item-gap) * 0.5);
 }

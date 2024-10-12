@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaChevronDown, FaChevronUp, FaQuestion } from 'react-icons/fa';
-import './Faq.css';
+import './Faqs.css';
 
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
