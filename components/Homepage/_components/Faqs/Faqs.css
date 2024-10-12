@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
+    max-width: 1000px;
+    margin: 0px auto;
 }
 
 .faq-item {

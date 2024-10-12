@@ -13,14 +13,14 @@
   --theme-yellow-primary: #FF6347;
   --theme-yellow-light: #FFA07A;
   --theme-blue-background-light: rgb(217, 229, 233);
-  --color-black-text: #333;
-  --color-black-light: #666;
-  --color-purple-text: #8167a9;
+  --color-black-darkgray: #333;
+  --color-black-gray: #666;
+  --color-purple-light: #8167a9;
 }
 
 body {
   font-family: var(--font-open-sans), sans-serif;
-  color: var(--color-black-text);
+  color: var(--color-black-darkgray);
 }
 
 h1,

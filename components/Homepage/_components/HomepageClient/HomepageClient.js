@@ -5,9 +5,10 @@ import { HiClock } from "react-icons/hi";
 import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp } from "react-icons/md";
 import { PiPersonSimpleBikeBold } from "react-icons/pi";
 import { TiArrowRightThick } from "react-icons/ti";
+import Faqs from '../Faqs/Faqs';
 import HeroForm from '../HeroForm/HeroForm';
 import './HomepageClient.css';
-import Faq from '../Faq/Faq';
+import Bikes from '../Bikes/Bikes';
 
 const HomepageClient = () => {
     return (
@@ -135,9 +136,13 @@ const HomepageClient = () => {
                     </div>
                 </div>
             </section>
+            <section className="bikes-section home-section">
+                <h1 className="bikes-title title home-title">Our Bikes</h1>
+                <Bikes />
+            </section>
             <section className="faq-section home-section">
                 <h2 className="faq-title title home-title">Frequently Asked Questions</h2>
-                <Faq />
+                <Faqs />
             </section>
         </>
     )
