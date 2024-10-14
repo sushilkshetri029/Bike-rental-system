@@ -1,4 +1,4 @@
-import ScrollTo from '@/components/ui/ScrollTo/ScrollTo';
+import ScrollTo from '@/components/utils/ScrollTo/ScrollTo';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaImages, FaMotorcycle, FaSearch } from "react-icons/fa";
@@ -14,16 +14,19 @@ import './HomepageClient.css';
 import Hero from '../Hero/Hero';
 import WhySection from '../WhySection/WhySection';
 import HowItWorksSection from '../HowItWorksSection/HowItWorksSection';
+import { Suspense } from 'react';
 
 const HomepageClient = () => {
 
     return (
         <>
-            <ScrollTo />
+            <Suspense>
+                <ScrollTo />
+            </Suspense>
             <section className="hero home-section">
                 <Hero />
             </section>
-            <section className="why-vehicle-rs home-section" id='test'>
+            <section className="why-vehicle-rs home-section">
                 <h1 className="why-title title home-title">Why Vehicle-RS ?</h1>
                 <WhySection />
             </section>
