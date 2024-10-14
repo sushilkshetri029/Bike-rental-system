@@ -5,27 +5,39 @@ import Link from 'next/link';
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import './Bikes.css';
 import { Rating } from 'react-simple-star-rating';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const bikes = [
     {
         id: 1,
-        name: 'Sport Bike',
+        name: 'Bajaj Pulsar 150',
         rateUSD: 50,
         rateNPR: 6000,
         ridesCount: 120,
         isNew: true,
         rating: 90,
+        imageUrl: '/png/bajaj-pulsar-150.png',
     },
     {
         id: 2,
-        name: 'Cruiser Bike',
+        name: 'Bajaj Pulsar 220',
         rateUSD: 40,
         rateNPR: 4800,
         ridesCount: 200,
+        isNew: true,
+        rating: 100,
+        imageUrl: '/png/bajaj-pulsar-220.png',
+    },
+    {
+        id: 3,
+        name: 'Yamaha FZS V2',
+        rateUSD: 30,
+        rateNPR: 3600,
+        ridesCount: 200,
         isNew: false,
         rating: 100,
+        imageUrl: '/png/yamaha-fzs-v2.png',
     },
-    // Add more bikes as needed
 ];
 
 const Bikes = () => {
@@ -35,8 +47,8 @@ const Bikes = () => {
                 {bikes.map((bike) => (
                     <div key={bike.id} className="bike-card">
                         {bike.isNew && <span className="new-label">New</span>}
-                        <div className="bike-image">
-                            <Image className='bike-image' src='/png/bajaj-pulsar-150.png' width={200} height={200} alt='Motorbike' />
+                        <div className="bike-image-wrapper">
+                            <Image className='bike-image' src={bike.imageUrl} width={300} height={200} alt='Motorbike' />
                         </div>
                         <div className="line"></div>
                         <h3 className="bike-name">{bike.name}</h3>
@@ -53,10 +65,11 @@ const Bikes = () => {
                         </div>
                         <div className="line"></div>
                         <div className="bike-ratings">
-                            <div className="bike-ratings-title highlight-blue">
+                            {/* <div className="bike-ratings-title highlight-blue">
                                 Overall Ratings
-                            </div>
+                            </div> */}
                             <Rating
+                                className='bike-rating'
                                 initialValue={(bike.rating * 5) / 100}
                                 allowFraction
                                 iconsCount={5}
@@ -72,7 +85,9 @@ const Bikes = () => {
                     </div>
                 ))}
             </div>
-            <Link href="/bikes" className="show-more-btn link-rd margin-center btn btn-blue">Show More Bikes</Link>
+            <Link href="/bikes" className="show-more-btn link-rd margin-center btn btn-blue flex-center gap-10">
+                Show More Bikes <FaExternalLinkAlt />
+            </Link>
         </>
     );
 };

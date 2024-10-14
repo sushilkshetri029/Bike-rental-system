@@ -134,3 +134,15 @@
 .margin-center {
   margin: 0px auto;
 }
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.bg-gray-light {
+  background-color: #f5f5f5;
+}
