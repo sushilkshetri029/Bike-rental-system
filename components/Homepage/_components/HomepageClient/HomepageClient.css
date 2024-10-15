@@ -8,6 +8,10 @@ main.home {
     margin: 0px auto;
 }
 
+.home-section.bottom {
+    padding-bottom: 125px;
+}
+
 .home-title {
     margin-bottom: var(--section-item-gap);
 }
@@ -20,7 +24,7 @@ section.hero {
     min-height: 450px;
     padding: 50px 50px 175px 50px;
     gap: 50px;
-    background-color: var(--theme-blue-background-light);
+    background-color: var(--theme-blue-light);
 }
 
 section.why-vehicle-rs {

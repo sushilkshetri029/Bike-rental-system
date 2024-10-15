@@ -27,7 +27,7 @@
     padding: 15px 20px;
     cursor: pointer;
     border-radius: 10px;
-    background-color: var(--theme-blue-background-light);
+    background-color: var(--theme-blue-light);
     border: 1px solid #ccc;
     transition: 0.25s ease;
 }
