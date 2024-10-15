@@ -1,15 +1,14 @@
 nav.navbar-wrapper {
-    /* display: flex;
-    flex-direction: row;
-    gap: 70px;
-    justify-content: space-between;
-    align-items: center; */
-    padding: 15px 50px; /* Responsive: Make 15px later */
-    /* border-bottom: 2px solid gray; */
+    padding: 15px 50px;
     background-color: var(--theme-blue-light);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    gap: 40px;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 .nav-left {
@@ -32,6 +31,10 @@ nav.navbar-wrapper {
 .nav-left .logo .logo-text {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.nav-right-wrapper {
+    align-items: center;
 }
 
 .nav-middle {
@@ -90,4 +93,29 @@ nav.navbar-wrapper {
 
 .nav-right .nav-right-item.sign-in-link:hover {
     background-color: var(--theme-blue-dark-3);
+}
+
+.menu-icon-wrapper.menu-icon-navbar {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    nav.navbar-wrapper {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .menu-icon-wrapper.menu-icon-navbar {
+        display: flex;
+    }
+    
 }
