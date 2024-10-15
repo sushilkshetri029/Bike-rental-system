@@ -1,10 +1,11 @@
-import './Footer.css';
+import FooterCore from "./_components/FooterCore/FooterCore";
+import { Suspense } from "react";
 
 const Footer = () => {
   return (
-    <div>
-      Footer
-    </div>
+    <Suspense fallback={null}>
+      <FooterCore />
+    </Suspense>
   )
 }
 

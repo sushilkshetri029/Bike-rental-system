@@ -13,9 +13,13 @@
   --theme-yellow-primary: #FF6347;
   --theme-yellow-orange: rgba(255, 166, 0, 0.533);
   --theme-yellow-light: #FFA07A;
-  --theme-blue-background-light: rgb(217, 229, 233);
+  --theme-dark-gray: #24262b;
+  --theme-blue-light: rgb(217, 229, 233);
+  --color-white-dim: rgb(241, 241, 241);
+  --color-white-dim-2: rgb(217, 217, 217);
   --color-black-darkgray: #333;
   --color-black-midgray: #444444;
+  --color-black-midgray-2: rgb(80, 79, 79);
   --color-black-gray: #666;
   --color-purple-light: #8167a9;
 }
