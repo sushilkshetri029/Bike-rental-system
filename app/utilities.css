@@ -121,8 +121,7 @@
   width: 50%;
   bottom: 0px;
   border-radius: 20px;
-  min-height: 3px;
-  background-color: var(--theme-yellow-primary);
+  border: 2px solid var(--theme-yellow-primary);
 }
 
 .line {
