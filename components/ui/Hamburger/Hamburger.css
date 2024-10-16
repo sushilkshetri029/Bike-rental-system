@@ -1,6 +1,6 @@
 .menu-icon-wrapper {
     --span-height: 3px;
-    --span-background-color: var(--theme-yellow-primary);
+    --span-background-color: var(--theme-blue-dark-2);
     width: fit-content;
     min-width: 35px;
     height: 35px;
@@ -10,6 +10,7 @@
     background-color: white;
     border-radius: 5px;
     display: flex;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     transition: .25s ease-in-out;
 }
 
@@ -39,6 +40,7 @@
     height: var(--span-height);
     width: 100%;
     background: var(--span-background-color);
+    /* border: calc(var(--span-height) / 1.8) solid var(--span-background-color); */
     border-radius: 9px;
     opacity: 1;
     left: 0;

@@ -10,7 +10,7 @@ import './FooterCore.css';
 const FooterCore = () => {
 
   const pathname = usePathname();
-  const pathClass = pathname.replace('/', '') || 'home';
+  const pathClass = pathname.split('?')[0].split('#')[0].split('/')[1] || 'home';
 
   return (
     <footer className={`footer-wrapper ${pathClass}`}>

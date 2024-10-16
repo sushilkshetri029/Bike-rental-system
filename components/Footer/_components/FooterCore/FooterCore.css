@@ -7,7 +7,7 @@
     /* margin-top: 50px; */
     background-color: var(--theme-dark-gray);
     color: var(--color-white-dim);
-    z-index: 1500;
+    z-index: 98;
 }
 
 .footer-separator {
