@@ -7,8 +7,10 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import Hamburger from '@/components/ui/Hamburger/Hamburger';
 import { useScroll } from '@/contexts/ScrollContext/ScrollContext';
-import { MdOutlineArrowCircleRight } from 'react-icons/md';
-import { FaAngleRight, FaChevronRight } from 'react-icons/fa6';
+import { MdMiscellaneousServices, MdOutlineArrowCircleRight } from 'react-icons/md';
+import { FaAngleRight, FaAngleLeft, FaChevronRight, FaUsersGear } from 'react-icons/fa6';
+import { TbMotorbike } from "react-icons/tb";
+import { FaImages } from 'react-icons/fa';
 
 const NavbarCore = () => {
 
@@ -96,14 +98,20 @@ const NavbarCore = () => {
         <div className={`nav-right-wrapper nav-mobile ${navMenuOpen ? `open` : ``}`} ref={navMenuRef}>
           <FaAngleRight strokeWidth={20} className='nav-close-icon flex-center' onClick={handleMenuClick} />
           <div className="nav-right-wrapper-inner">
+            <Link href='/' className="mobile-nav-logo link-rd">
+              <Image className='logo-image image-fit' src="/logo.png" width={40} height={40} priority alt="VehicleRS" />
+              <div className="logo-text no-wrap">Vehicle-RS</div>
+            </Link>
+            <div className="line"></div>
             <div className="nav-middle">
-              <Link href='#' className={`nav-middle-item link-rd ${firstPathSegment === 'ride' ? 'active' : ''}`}>Ride</Link>
-              <Link href='#' className={`nav-middle-item link-rd ${firstPathSegment === 'gallery' ? 'active' : ''}`}>Gallery</Link>
-              <Link href='#' className={`nav-middle-item link-rd ${firstPathSegment === 'services' ? 'active' : ''}`}>Services</Link>
-              <Link href='#' className={`nav-middle-item link-rd ${firstPathSegment === 'about-us' ? 'active' : ''}`}>About</Link>
+              <Link href='#' className={`nav-middle-item btn btn-gray-light link-rd ${firstPathSegment === 'ride' ? 'active' : ''}`}><TbMotorbike className='nav-link-icon' />Ride</Link>
+              <Link href='#' className={`nav-middle-item btn btn-gray-light link-rd ${firstPathSegment === 'gallery' ? 'active' : ''}`}><FaImages className='nav-link-icon' />Gallery</Link>
+              <Link href='#' className={`nav-middle-item btn btn-gray-light link-rd ${firstPathSegment === 'services' ? 'active' : ''}`}><MdMiscellaneousServices className='nav-link-icon' />Services</Link>
+              <Link href='#' className={`nav-middle-item btn btn-gray-light link-rd ${firstPathSegment === 'about-us' ? 'active' : ''}`}><FaUsersGear className='nav-link-icon' />About</Link>
             </div>
+            {/* <div className="line"></div> */}
             <div className="nav-right">
-              <Link href='#' className="nav-right-item link-rd sign-in-link no-wrap">Sign In</Link>
+              <Link href='#' className="nav-right-item link-rd sign-in-link no-wrap full-width flex-center">Sign In</Link>
             </div>
           </div>
         </div>
