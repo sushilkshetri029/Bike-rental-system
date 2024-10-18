@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 import './utilities.css';
+import { ScrollProvider } from "@/contexts/ScrollContext/ScrollContext";
 
 // Open Sans variable font
 const openSans = localFont({
@@ -44,10 +45,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${openSans.variable} ${montserrat.variable} ${openSansItalic.variable} ${montserratItalic.variable}`}
       >
-        <Navbar />
-        <NextTopLoader color="var(--theme-blue-dark)" showSpinner={false} zIndex={1800} />
-        {children}
-        <Footer />
+        <ScrollProvider>
+          <Navbar />
+          <NextTopLoader color="var(--theme-blue-dark)" showSpinner={false} zIndex={1800} />
+          {children}
+          <Footer />
+        </ScrollProvider>
       </body>
     </html>
   );

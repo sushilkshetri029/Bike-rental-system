@@ -9,27 +9,27 @@ const HowItWorksSection = () => {
     return (
         <>
         <div className="how-it-works-steps">
-            <div className="how-it-works-step">
+            <div className="how-it-works-step item-1">
                 <FaSearch className='icon' />
-                <h3 className="how-it-works-step-title"><span className="highlight-yellow">1.</span> Find Your Bike</h3>
+                <h3 className="how-it-works-step-title"><span className="highlight-yellow">1.</span> Select Bike</h3>
                 <p className="how-it-works-step-description">Browse through our wide range of motorbikes and choose the one that suits your needs.</p>
             </div>
-            <TiArrowRightThick className='step-icon' />
-            <div className="how-it-works-step">
+            <TiArrowRightThick className='step-icon item-2' />
+            <div className="how-it-works-step item-3">
                 <MdBookmarkAdded className='icon' />
                 <h3 className="how-it-works-step-title"><span className="highlight-yellow">2.</span> Book Online</h3>
                 <p className="how-it-works-step-description">Reserve your chosen bike online with our easy-to-use booking system.</p>
             </div>
-            <TiArrowRightThick className='step-icon' />
-            <div className="how-it-works-step">
+            <TiArrowRightThick className='step-icon item-4' />
+            <div className="how-it-works-step item-5">
                 <FaMotorcycle className='icon' />
                 <h3 className="how-it-works-step-title"><span className="highlight-yellow">3.</span> Pick Up</h3>
                 <p className="how-it-works-step-description">Visit our location to pick up your bike and complete the rental process.</p>
             </div>
-            <TiArrowRightThick className='step-icon' />
-            <div className="how-it-works-step">
+            <TiArrowRightThick className='step-icon item-6' />
+            <div className="how-it-works-step item-7">
                 <PiPersonSimpleBikeBold className='icon' />
-                <h3 className="how-it-works-step-title"><span className="highlight-yellow">4.</span> Enjoy Your Ride</h3>
+                <h3 className="how-it-works-step-title"><span className="highlight-yellow">4.</span> Enjoy Ride</h3>
                 <p className="how-it-works-step-description">Hit the road and enjoy your ride with our top-quality motorbikes.</p>
             </div>
         </div>

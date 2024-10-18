@@ -10,7 +10,7 @@ import './FooterCore.css';
 const FooterCore = () => {
 
   const pathname = usePathname();
-  const pathClass = pathname.replace('/', '') || 'home';
+  const pathClass = pathname.split('?')[0].split('#')[0].split('/')[1] || 'home';
 
   return (
     <footer className={`footer-wrapper ${pathClass}`}>
@@ -56,7 +56,7 @@ const FooterCore = () => {
             <Image src="/logo.png" className='footer-logo' width={45} height={45} priority alt="Gharsewa footer" />
             <div className="footer-bottom-logo-text">Vehicle-RS</div>
           </Link>
-          <div className="footer-bottom-text">Copyright &copy; | www.vehicle-rs.com - 2024 | All Right Reserved</div>
+          <div className="footer-bottom-text">Copyright &copy; | www.vehicle-rs.com - {new Date().getFullYear()} | All Right Reserved</div>
         <ul className="footer-bottom-platforms">
           <Link href={"https://www.facebook.com/profile.php?id=gharsewa"} target='_blank'><li className="footer-platform-item"><FaFacebookF /></li></Link>
           <Link href={"https://www.instagram.com/gharsewa"} target='_blank'><li className="footer-platform-item"><FaInstagram /></li></Link>
