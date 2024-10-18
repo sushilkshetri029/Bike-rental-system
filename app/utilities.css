@@ -124,6 +124,13 @@
   border: 2px solid var(--theme-yellow-primary);
 }
 
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }  
+}
+
 .line {
   width: 100%;
   height: 0px;

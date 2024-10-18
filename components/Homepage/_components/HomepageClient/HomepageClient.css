@@ -57,19 +57,31 @@ section.bikes-section {
 }
 
 @media screen and (max-width: 900px) {
-    section.home-section {
+    section.hero {
         padding: 50px 25px 175px 25px;
+    }
+
+    section.why-vehicle-rs {
+        margin-top: 150px;
     }
 }
 
 @media screen and (max-width: 550px) {
-    section.home-section {
+    section.hero {
         padding: 50px 25px 200px 25px;
     }
 }
 
 @media screen and (max-width: 500px) {
     section.home-section {
+        padding: 50px 15px 125px 15px;
+    }
+
+    section.hero {
         padding: 50px 15px 275px 15px;
+    }
+
+    section.why-vehicle-rs {
+        margin-top: 225px;
     }
 }
