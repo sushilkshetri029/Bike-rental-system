@@ -39,44 +39,50 @@ const HeroForm = () => {
   };
 
   return (
-    <form action="" className="hero-form">
-      <div className="hero-form-title">
-        <h3 className="text">
-          <FaRegCalendarAlt className='hero-title-icon' /> Request a Ride
-        </h3>
-        <div className="line"></div>
-      </div>
-      <div className="form-inputs">
-      <Input
-          label='Name'
-          required
-          value={name}
-          onChange={(e) => handleInputChange(e, 'name')}
-        />
-        <Input
-          label='Email'
-          required
-          type='email'
-          value={email}
-          onChange={(e) => handleInputChange(e, 'email')}
-        />
-        <Input
-          label='Contact'
-          required
-          value={contact}
-          onChange={(e) => handleInputChange(e, 'contact')}
-        />
-        <Input
-          label='Pickup Date'
-          required
-          fixedLabel
-          value={pickupDate}
-          type='date'
-          onChange={(e) => handleInputChange(e, 'pickupDate')}
-        />
-        <button type='submit' className='btn btn-blue'>Submit</button>
-      </div>
-    </form>
+    <div className="hero-form-wrapper">
+      <form action="" className="hero-form">
+        <div className="hero-form-title">
+          <h3 className="text">
+            <FaRegCalendarAlt className='hero-title-icon' /> Request a Ride
+          </h3>
+          <div className="line"></div>
+        </div>
+        <div className="form-inputs">
+          <div className="form-inputs-group first">
+            <Input
+              label='Name'
+              required
+              value={name}
+              onChange={(e) => handleInputChange(e, 'name')}
+            />
+            <Input
+              label='Email'
+              required
+              type='email'
+              value={email}
+              onChange={(e) => handleInputChange(e, 'email')}
+            />
+          </div>
+          <div className="form-inputs-group second">
+            <Input
+              label='Contact'
+              required
+              value={contact}
+              onChange={(e) => handleInputChange(e, 'contact')}
+            />
+            <Input
+              label='Pickup Date'
+              required
+              fixedLabel
+              value={pickupDate}
+              type='date'
+              onChange={(e) => handleInputChange(e, 'pickupDate')}
+            />
+          <button type='submit' className='hero-submit-btn btn btn-blue'>Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
   )
 }
 

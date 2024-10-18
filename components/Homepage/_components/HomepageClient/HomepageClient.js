@@ -1,20 +1,11 @@
 import ScrollTo from '@/components/utils/ScrollTo/ScrollTo';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaImages, FaMotorcycle, FaSearch } from "react-icons/fa";
-import { HiClock } from "react-icons/hi";
-import { MdAttachMoney, MdBookmarkAdded, MdOutlineMiscellaneousServices, MdSecurity, MdThumbUp } from "react-icons/md";
-import { PiPersonSimpleBikeBold } from "react-icons/pi";
-import { TiArrowRightThick } from "react-icons/ti";
 import Bikes from '../Bikes/Bikes';
 import Faqs from '../Faqs/Faqs';
-import HeroForm from '../HeroForm/HeroForm';
-import Testimonials from '../Testimonials/Testimonials';
-import './HomepageClient.css';
 import Hero from '../Hero/Hero';
-import WhySection from '../WhySection/WhySection';
 import HowItWorksSection from '../HowItWorksSection/HowItWorksSection';
-import { Suspense } from 'react';
+import Testimonials from '../Testimonials/Testimonials';
+import WhySection from '../WhySection/WhySection';
+import './HomepageClient.css';
 
 const HomepageClient = () => {
 
