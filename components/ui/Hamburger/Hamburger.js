@@ -19,4 +19,7 @@ const Hamburger = forwardRef(({className='', open, onClick }, ref) => {
     )
 });
 
-export default Hamburger
+// Set the display name for the component
+Hamburger.displayName = 'Hamburger';
+
+export default Hamburger;
