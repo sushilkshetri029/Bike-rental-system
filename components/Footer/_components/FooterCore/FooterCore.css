@@ -38,6 +38,7 @@
 
 .footer-titles {
     font-size: 1.15rem;
+    width: fit-content;
 }
 
 .more-on-company a {
@@ -92,6 +93,7 @@
     font-size: .95rem;
     color: inherit;
 }
+
 .company-infos-desc .line {
     border-color: var(--color-white-dim);
 }
@@ -113,6 +115,10 @@
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+.footer-bottom-logo-text {
+    white-space: nowrap;
 }
 
 .footer-bottom-logo img {
@@ -153,11 +159,16 @@
     transform: scale(1.1);
 }
 
+.footer-bottom-left-wrapper.footer-bottom-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
 
     .footer-top,
     .footer-bottom {
-        width: 95%;
+        width: 100%;
+        padding: 0px 25px;
     }
 
     .footer-separator {
@@ -166,6 +177,15 @@
 
     .footer-bottom-logo-text {
         display: none;
+    }
+
+    .footer-bottom {
+        gap: 30px;
+    }
+
+    .footer-bottom-text {
+        margin-right: auto;
+        margin-left: -17.5px;
     }
 }
 
@@ -181,12 +201,12 @@
     }
 
     .footer-top-right {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 12.5px;
     }
 
     .company-details {
-        gap: 5px;
+        gap: 10px;
     }
 
     .company-infos-title {
@@ -217,12 +237,28 @@
 }
 
 @media screen and (max-width: 500px) {
-    .footer-top-right {
-        flex-direction: column;
+
+    .footer-top {
+        padding: 0px 15px;
     }
 
     .footer-bottom {
         flex-direction: column;
         gap: 10px;
+        padding: 0px 15px;
+    }
+
+    .footer-bottom-text {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .footer-bottom-desktop {
+        display: none;
+    }
+
+    .footer-bottom-left-wrapper.footer-bottom-mobile {
+        gap: 10px;
+        display: flex;
     }
 }

@@ -46,12 +46,12 @@
 }
 
 .faq-question .question-icon {
-    /* font-size: 1rem; */
-    /* color: var(--theme-blue-dark-2); */
     color: var(--theme-yellow-primary);
+    min-width: 1.05rem;
 }
 
 .faq-icon {
+    min-width: 1.1rem;
     font-size: 1.1rem;
     color: var(--theme-blue-dark-2);
     transition: 0.25s ease;

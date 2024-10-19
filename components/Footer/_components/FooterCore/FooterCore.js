@@ -52,11 +52,24 @@ const FooterCore = () => {
       </div>
       <div className="footer-separator"></div>
       <div className="footer-bottom">
+        <Link href="/" className="footer-bottom-logo footer-bottom-desktop">
+          <Image src="/logo.png" className='footer-logo' width={45} height={45} priority alt="Gharsewa footer" />
+          <div className="footer-bottom-logo-text">Vehicle-RS</div>
+        </Link>
+        <div className="footer-bottom-text footer-bottom-desktop">
+          Copyright &copy; | www.vehicle-rs.com - {new Date().getFullYear()} | All Right Reserved
+        </div>
+        <div className="footer-bottom-left-wrapper footer-bottom-mobile flex-center">
           <Link href="/" className="footer-bottom-logo">
             <Image src="/logo.png" className='footer-logo' width={45} height={45} priority alt="Gharsewa footer" />
-            <div className="footer-bottom-logo-text">Vehicle-RS</div>
+            <div className="footer-bottom-logo-text">
+              Vehicle-RS
+            </div>
           </Link>
-          <div className="footer-bottom-text">Copyright &copy; | www.vehicle-rs.com - {new Date().getFullYear()} | All Right Reserved</div>
+          <div className="footer-bottom-text">
+            Copyright &copy; | www.vehicle-rs.com - {new Date().getFullYear()} | All Right Reserved
+          </div>
+        </div>
         <ul className="footer-bottom-platforms">
           <Link href={"https://www.facebook.com/profile.php?id=gharsewa"} target='_blank'><li className="footer-platform-item"><FaFacebookF /></li></Link>
           <Link href={"https://www.instagram.com/gharsewa"} target='_blank'><li className="footer-platform-item"><FaInstagram /></li></Link>
