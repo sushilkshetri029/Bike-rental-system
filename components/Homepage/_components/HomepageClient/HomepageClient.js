@@ -1,10 +1,10 @@
 import ScrollTo from '@/components/utils/ScrollTo/ScrollTo';
-import Bikes from '../Bikes/Bikes';
-import Faqs from '../Faqs/Faqs';
-import Hero from '../Hero/Hero';
-import HowItWorksSection from '../HowItWorksSection/HowItWorksSection';
-import Testimonials from '../Testimonials/Testimonials';
-import WhySection from '../WhySection/WhySection';
+import Bikes from './_components/Bikes/Bikes';
+import Faqs from './_components/Faqs/Faqs';
+import Hero from './_components/Hero/Hero';
+import HowItWorksSection from './_components/HowItWorksSection/HowItWorksSection';
+import Testimonials from './_components/Testimonials/Testimonials';
+import WhySection from './_components/WhySection/WhySection';
 import './HomepageClient.css';
 
 const HomepageClient = () => {

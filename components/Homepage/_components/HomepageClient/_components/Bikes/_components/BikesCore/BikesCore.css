@@ -185,7 +185,7 @@
     -ms-user-select: none;
 }
 
-.bike-card-profile {
+.bike-image {
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
@@ -217,12 +217,6 @@
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(55, 34, 1, 0.4);
-}
-
-.bike-card-profile {
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
 }
 
 .bike-card-infos {
@@ -412,11 +406,6 @@
     .bikes-slider-wrapper .left-arrow.dots,
     .bikes-slider-wrapper .right-arrow.dots {
         display: flex;
-    }
-
-    .bike-card-profile {
-        height: 50px;
-        width: 50px;
     }
 
     .card-infos-name {

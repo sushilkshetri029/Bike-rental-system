@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import FaqsCore from './_components/FaqsCore/FaqsCore';
 
-const Faq = () => {
+const Faqs = () => {
   return (
     <Suspense fallback={null}>
       <FaqsCore />
@@ -9,4 +9,4 @@ const Faq = () => {
   )
 };
 
-export default Faq;
+export default Faqs;
