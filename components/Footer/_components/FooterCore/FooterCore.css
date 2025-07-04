@@ -51,8 +51,8 @@
     gap: 10px;
 }
 
-.more-on-item {
-    font-size: .9rem;
+.footer-wrapper .more-on-item {
+    font-size: 0.9rem;
     color: var(--color-white-dim-2);
     list-style: none;
     cursor: pointer;
@@ -163,14 +163,16 @@
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
     .footer-top,
     .footer-bottom {
         width: 100%;
         padding: 0px 25px;
     }
+}
 
+@media screen and (max-width: 1000px) {
     .footer-separator {
         width: 100%;
     }

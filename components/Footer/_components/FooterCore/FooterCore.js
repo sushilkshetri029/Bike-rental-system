@@ -18,9 +18,9 @@ const FooterCore = () => {
         <div className="footer-top-left">
           <h4 className="footer-top-left-title footer-titles line-title">More On Vehicle-RS</h4>
           <ul className="more-on-company footer-lists">
-            <Link href={"/about-us"}><li className="more-on-item">About Us</li></Link>
-            <Link href={"/privacy-policy"}><li className="more-on-item">Privacy Policy</li></Link>
-            <Link href={"/terms-and-conditions"}><li className="more-on-item">Terms & Conditions</li></Link>
+            <Link href={"/about-us"}><li className="more-on-item link-hover">About Us</li></Link>
+            <Link href={"/privacy-policy"}><li className="more-on-item link-hover">Privacy Policy</li></Link>
+            <Link href={"/terms-and-conditions"}><li className="more-on-item link-hover">Terms & Conditions</li></Link>
           </ul>
         </div>
         <div className="footer-top-middle">
