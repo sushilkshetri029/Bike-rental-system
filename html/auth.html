@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle-RS | Sign In</title>
+  <meta name="description" content="Sign in or create a Vehicle-RS account">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="auth">
+  <nav class="navbar-wrapper home">
+    <div class="nav-inner-overlay"></div>
+    <div class="nav-left">
+      <a href="index.html" class="logo nav-left-item link-rd">
+        <img class="logo-image image-fit" src="public/html/logo.png" width="50" height="50" alt="VehicleRS">
+        <div class="logo-text no-wrap">Vehicle-RS</div>
+      </a>
+    </div>
+    <div class="nav-middle nav-desktop">
+      <a href="index.html#bikes-section" data-nav="ride" class="nav-middle-item link-rd">Ride</a>
+      <a href="about-us.html" data-nav="about-us" class="nav-middle-item link-rd">About</a>
+    </div>
+    <div class="nav-right nav-desktop">
+      <a href="auth.php" class="nav-right-item link-rd sign-in-link no-wrap">Sign In</a>
+    </div>
+  </nav>
+
+  <main class="auth-shell">
+    <div class="auth-layout" data-auth-page>
+      <section class="auth-panel">
+        <div class="auth-brand">
+          <img src="public/logo.png" alt="Vehicle-RS logo">
+          <div class="auth-brand-text">
+            <div class="eyebrow">Vehicle-RS</div>
+            <h1>Ride with confidence from the first login.</h1>
+          </div>
+        </div>
+
+        <div class="auth-copy">
+          <p>Use the same clean blue-and-yellow theme from the rest of the site. Log in to manage your rides or create a new account in a few quick steps.</p>
+          <div class="auth-benefits">
+            <div class="auth-benefit">
+              <i class="fa-solid fa-motorcycle icon-glyph" aria-hidden="true"></i>
+              <div>
+                <div class="auth-benefit-title">Fast booking</div>
+                <div class="auth-benefit-copy">Move from browsing to booking without leaving the flow.</div>
+              </div>
+            </div>
+            <div class="auth-benefit">
+              <i class="fa-solid fa-shield-halved icon-glyph" aria-hidden="true"></i>
+              <div>
+                <div class="auth-benefit-title">Safe accounts</div>
+                <div class="auth-benefit-copy">A simple, readable auth screen that matches the rest of the project.</div>
+              </div>
+            </div>
+            <div class="auth-benefit">
+              <i class="fa-solid fa-clock icon-glyph" aria-hidden="true"></i>
+              <div>
+                <div class="auth-benefit-title">Always available</div>
+                <div class="auth-benefit-copy">Sign in or register anytime from your desktop.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-panel-bottom">
+          <div class="auth-panel-stats">
+            <div class="auth-stat">
+              <span class="stat-value">01</span>
+              <span class="stat-label">account page</span>
+            </div>
+            <div class="auth-stat">
+              <span class="stat-value">24/7</span>
+              <span class="stat-label">access</span>
+            </div>
+          </div>
+          <a class="auth-cta" href="index.html#bikes-section">Browse bikes</a>
+        </div>
+      </section>
+
+      <section class="auth-card shadow" aria-label="Authentication forms">
+        <div class="auth-card-inner">
+          <div class="auth-card-header">
+            <h2>Welcome back</h2>
+            <p>Switch between login and register without losing the theme or the layout language of the site.</p>
+          </div>
+
+          <div class="auth-tabs" role="tablist" aria-label="Authentication options">
+            <button class="auth-tab active" type="button" data-auth-tab="login" aria-selected="true">Login</button>
+            <button class="auth-tab" type="button" data-auth-tab="register" aria-selected="false">Register</button>
+          </div>
+
+          <div class="auth-panels">
+            <form class="auth-panel-form" data-auth-panel="login">
+              <div class="auth-field-grid">
+                <div class="auth-field">
+                  <label for="login-email">Email address</label>
+                  <div class="input-wrapper auth-input-wrapper">
+                    <i class="fa-solid fa-envelope field-icon" aria-hidden="true"></i>
+                    <input id="login-email" type="email" placeholder=" " required>
+                  </div>
+                </div>
+                <div class="auth-field auth-password">
+                  <label for="login-password">Password</label>
+                  <div class="input-wrapper auth-input-wrapper">
+                    <i class="fa-solid fa-lock field-icon" aria-hidden="true"></i>
+                    <input id="login-password" type="password" placeholder=" " required>
+                    <button class="auth-password-toggle" type="button" data-toggle-password="login-password" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-row-meta">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+              </div>
+
+              <button class="auth-submit" type="submit">Login to account</button>
+
+              <div class="auth-social">
+                <div class="auth-social-divider">or continue with</div>
+                <div class="auth-social-buttons">
+                  <a href="#" class="auth-social-button"><i class="fa-brands fa-google" aria-hidden="true"></i> Google</a>
+                  <a href="#" class="auth-social-button"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+                  <a href="#" class="auth-social-button"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                </div>
+              </div>
+
+              <p class="auth-switch">New here? <a href="#register">Create an account</a></p>
+            </form>
+
+            <form class="auth-panel-form" data-auth-panel="register" hidden>
+              <div class="auth-field-grid">
+                <div class="auth-field-row">
+                  <div class="auth-field">
+                    <label for="register-first-name">First name</label>
+                    <div class="input-wrapper auth-input-wrapper">
+                      <i class="fa-solid fa-user field-icon" aria-hidden="true"></i>
+                      <input id="register-first-name" type="text" placeholder=" " required>
+                    </div>
+                  </div>
+                  <div class="auth-field">
+                    <label for="register-last-name">Last name</label>
+                    <div class="input-wrapper auth-input-wrapper">
+                      <i class="fa-solid fa-user field-icon" aria-hidden="true"></i>
+                      <input id="register-last-name" type="text" placeholder=" " required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="auth-field">
+                  <label for="register-email">Email address</label>
+                  <div class="input-wrapper auth-input-wrapper">
+                    <i class="fa-solid fa-envelope field-icon" aria-hidden="true"></i>
+                    <input id="register-email" type="email" placeholder=" " required>
+                  </div>
+                </div>
+
+                <div class="auth-field auth-password">
+                  <label for="register-password">Password</label>
+                  <div class="input-wrapper auth-input-wrapper">
+                    <i class="fa-solid fa-lock field-icon" aria-hidden="true"></i>
+                    <input id="register-password" type="password" placeholder=" " required>
+                    <button class="auth-password-toggle" type="button" data-toggle-password="register-password" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+
+                <div class="auth-field auth-password">
+                  <label for="register-confirm-password">Confirm password</label>
+                  <div class="input-wrapper auth-input-wrapper">
+                    <i class="fa-solid fa-lock field-icon" aria-hidden="true"></i>
+                    <input id="register-confirm-password" type="password" placeholder=" " required>
+                    <button class="auth-password-toggle" type="button" data-toggle-password="register-confirm-password" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="auth-row-meta">
+                <label><input type="checkbox" required> I agree to the terms and conditions</label>
+              </div>
+
+              <button class="auth-submit" type="submit">Create account</button>
+
+              <p class="auth-switch">Already have an account? <a href="#login">Login instead</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer-wrapper home">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h4 class="footer-top-left-title footer-titles line-title">More On Vehicle-RS</h4>
+        <ul class="more-on-company footer-lists">
+          <li class="more-on-item"><a href="about-us.html" class="link-rd">About Us</a></li>
+          <li class="more-on-item"><a href="#" class="link-rd">Privacy Policy</a></li>
+          <li class="more-on-item"><a href="#" class="link-rd">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-top-middle">
+        <h4 class="footer-top-mid-title footer-titles line-title">Locations</h4>
+        <ul class="company-locations footer-lists">
+          <li class="more-on-item">Chitwan</li>
+        </ul>
+      </div>
+      <ul class="footer-top-right">
+        <li class="company-details">
+          <div class="company-details-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+          <div class="company-infos">
+            <h5 class="company-infos-title">Contact Number</h5>
+            <div class="company-infos-desc flex flex-center gap-10">
+              <a href="tel:9844310032" class="link-rd link-hover">9844310032</a>
+              <div class="line line-vertical"></div>
+              <a href="tel:9865005257" class="link-rd link-hover">9865005257</a>
+            </div>
+          </div>
+        </li>
+        <li class="company-details">
+          <div class="company-details-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+          <div class="company-infos">
+            <h5 class="company-infos-title">Email Address</h5>
+            <a href="mailto:vehicle-rs@gmail.com" class="company-infos-desc link-hover">vehicle-rs@gmail.com</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-separator"></div>
+    <div class="footer-bottom">
+      <a href="index.html" class="footer-bottom-logo footer-bottom-desktop">
+        <img src="public/html/logo.png" class="footer-logo" width="45" height="45" alt="Vehicle-RS footer">
+        <div class="footer-bottom-logo-text">Vehicle-RS</div>
+      </a>
+      <div class="footer-bottom-text footer-bottom-desktop">Copyright &copy; | www.vehicle-rs.com - <span data-year></span> | All Right Reserved</div>
+      <ul class="footer-bottom-platforms">
+        <li class="footer-platform-item"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li class="footer-platform-item"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li class="footer-platform-item"><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle-RS</title>
+  <meta name="description" content="Rent a motorbike in Chitwan">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js?homepage-batches=append"></script>
+</head>
+<body data-page="home">
+  <nav class="navbar-wrapper home">
+    <div class="nav-inner-overlay"></div>
+
+    <div class="nav-left">
+      <a href="index.php" class="logo nav-left-item link-rd">
+        <img class="logo-image image-fit" src="html/logo.png" width="50" height="50" alt="VehicleRS">
+        <div class="logo-text no-wrap">Vehicle-RS</div>
+      </a>
+    </div>
+
+    <div class="nav-middle nav-desktop">
+      <a href="index.php#bikes-section" data-nav="ride" class="nav-middle-item link-rd">Ride</a>
+      <a href="about-us.html" data-nav="about-us" class="nav-middle-item link-rd">About</a>
+    </div>
+
+    <div class="nav-right nav-desktop">
+      <a href="auth.php" class="nav-right-item link-rd sign-in-link no-wrap">Sign In</a>
+    </div>
+
+  </nav>
+
+  <main class="home">
+    <section class="hero home-section">
+      <div class="left hero-item">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title"><span class="highlight-yellow">Looking </span>to rent a <span class="highlight-yellow">motorbike </span> in Chitwan</h1>
+        </div>
+        <div class="line hero-line"></div>
+        <p class="hero-subtitle">We have the best motorbikes in town. Choose from a wide range of bikes, including sport bikes, cruisers, and dirt bikes. Whether you&apos;re seeking speed, comfort, or adventure, we have the perfect bike for you.</p>
+      </div>
+      <div class="right hero-item">
+        <img class="hero-image image-fit" width="500" height="300" src="public/png/motorbike-vector-3.png" alt="Motorbike">
+      </div>
+
+    </section>
+
+    <div class="booking-modal-backdrop" id="booking-modal-backdrop" hidden>
+      <div class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+        <button class="booking-modal-close" type="button" aria-label="Close hire form">×</button>
+        <h2 id="booking-modal-title">Hire this vehicle</h2>
+        <p id="booking-modal-bike-name">Selected vehicle</p>
+        <form action="index.php" method="post" class="booking-modal-form">
+          <input type="hidden" name="bike_id" id="booking-bike-id" value="">
+          <input type="hidden" name="bike_name" id="booking-bike-name" value="">
+          <label>Name<input class="input" type="text" name="name" required></label>
+          <label>Email<input class="input" type="email" name="email" required></label>
+          <label>Phone number<input class="input" type="tel" name="contact" pattern="(?:97|98)[0-9]{8}" minlength="10" maxlength="10" required></label>
+          <label>Pickup date<input class="input" type="date" name="pickupDate" id="booking-pickup-date" required></label>
+          <label>Drop date<input class="input" type="date" name="dropDate" id="booking-drop-date" required></label>
+          <div class="booking-modal-actions">
+            <button type="button" class="btn btn-gray-light booking-cancel-btn">Cancel</button>
+            <button type="submit" class="btn btn-blue">Confirm Hire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="why-vehicle-rs home-section" id="why-vehicle-rs-section">
+      <h1 class="why-title title home-title">Why Vehicle-RS ?</h1>
+      <div class="why-items" id="why-items"></div>
+    </section>
+
+    <section class="how-it-works-section home-section bg-gray-light" id="how-it-works-section">
+      <h1 class="how-it-works-title title home-title">How It Works ?</h1>
+      <div class="how-it-works-steps" id="how-it-works-steps"></div>
+    </section>
+
+    <section class="bikes-section home-section" id="bikes-section">
+      <h1 class="bikes-title title home-title">Our Bikes</h1>
+      <div class="bikes-grid-wrapper bikes-desktop">
+        <div class="bikes-grid" id="bikes-desktop-grid"></div>
+      </div>
+      <button type="button" class="show-more-btn margin-center btn btn-blue flex-center gap-10 bikes-desktop">Show More Bikes <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+    </section>
+
+    <section class="faq-section home-section bottom" id="faq-section">
+      <h2 class="faq-title title home-title">Frequently Asked Questions</h2>
+      <div class="faq-items" id="faq-items"></div>
+    </section>
+  </main>
+
+  <footer class="footer-wrapper home">
+    <div class="footer-top">
+      <div class="footer-top-left">
+        <h4 class="footer-top-left-title footer-titles line-title">More On Vehicle-RS</h4>
+        <ul class="more-on-company footer-lists">
+          <li class="more-on-item"><a href="about-us.html" class="link-rd footer-link link-hover">About Us</a></li>
+          <li class="more-on-item"><a href="#" class="link-rd footer-link link-hover">Privacy Policy</a></li>
+          <li class="more-on-item"><a href="#" class="link-rd footer-link link-hover">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-top-middle">
+        <h4 class="footer-top-mid-title footer-titles line-title">Locations</h4>
+        <ul class="company-locations footer-lists">
+          <li class="more-on-item">Chitwan</li>
+        </ul>
+      </div>
+      <ul class="footer-top-right">
+        <li class="company-details">
+          <div class="company-details-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+          <div class="company-infos">
+            <h5 class="company-infos-title">Contact Number</h5>
+            <div class="company-infos-desc flex flex-center gap-10">
+              <a href="tel:9844310032" class="link-rd link-hover">9844310032</a>
+              <div class="line line-vertical"></div>
+              <a href="tel:9865005257" class="link-rd link-hover">9865005257</a>
+            </div>
+          </div>
+        </li>
+        <li class="company-details">
+          <div class="company-details-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+          <div class="company-infos">
+            <h5 class="company-infos-title">Email Address</h5>
+            <a href="mailto:vehicle-rs@gmail.com" class="company-infos-desc link-hover">vehicle-rs@gmail.com</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-separator"></div>
+    <div class="footer-bottom">
+      <a href="index.html" class="footer-bottom-logo footer-bottom-desktop">
+        <img src="html/logo.png" class="footer-logo" width="45" height="45" alt="Vehicle-RS footer">
+        <div class="footer-bottom-logo-text">Vehicle-RS</div>
+      </a>
+      <div class="footer-bottom-text footer-bottom-desktop">Copyright &copy; | www.vehicle-rs.com - <span data-year></span> | All Right Reserved</div>
+      <ul class="footer-bottom-platforms">
+        <li class="footer-platform-item"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li class="footer-platform-item"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li class="footer-platform-item"><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
